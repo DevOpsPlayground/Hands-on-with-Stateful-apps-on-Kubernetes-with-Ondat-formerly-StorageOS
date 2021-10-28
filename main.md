@@ -6,6 +6,11 @@ The objective of this workshop is to explore Kubernetes StatefulSets and their u
 On the other hand, StatefulSets are Kubernetes first class objects providing Pods with a stable identity, and ensuring they can write to individual persistent volumes. They have additional characteristics we're going to highlight in this workshop.
 
 # Step 0 - Bring your Kubernetes cluster up with `kubeadm`
+For the time of the workshops we provide the lab environment at https://lab.devopsplayground.org/. You need to provide your meetup username.
+It will look like below:
+![lab-env](./lab-env.png)
+To access your worker nodes - replace `master` with `worker1`, `worker2` and `worker3`.
+
 On your Master node, run:
 ```
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
